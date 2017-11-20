@@ -40,7 +40,8 @@ public class Menu {
 			System.out.println(result);
 		}
 		if (opc == 3) {
-			
+			result=num1*num2;
+			System.out.println(result);
 		}
 		if (opc == 4) {
 			
