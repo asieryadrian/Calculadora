@@ -33,6 +33,9 @@ public class Menu {
 		opc = teclado.nextInt();
 		
 		if (opc == 1) {
+			result= num1 + num2;
+		
+		System.out.println(result);
 			
 		}
 		if (opc == 2) {
