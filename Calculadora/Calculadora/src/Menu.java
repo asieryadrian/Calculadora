@@ -23,19 +23,21 @@ public class Menu {
 		num2 = teclado.nextInt();
 		
 		System.out.println("Selecciona una opción por favor:");
-		opc = teclado.nextInt();
+		
 		
 		System.out.println("OPCIONES:");
 		System.out.println("Opción 1 = Suma");
 		System.out.println("Opción 2 = Resta");
 		System.out.println("Opción 3 = Multiplicación");
 		System.out.println("Opción 4 = División");
+		opc = teclado.nextInt();
 		
 		if (opc == 1) {
 			
 		}
 		if (opc == 2) {
 			result = num1 - num2;
+			System.out.println(result);
 		}
 		if (opc == 3) {
 			
@@ -43,6 +45,7 @@ public class Menu {
 		if (opc == 4) {
 			
 		}
+		
 	}
 
 }
