@@ -35,6 +35,20 @@ public class Calculadora {
 			}
 		}
 		num1=Integer.parseInt(verificador);
+		System.out.println("OPCIONES:");
+		System.out.println("Opción 1 = Suma");
+		System.out.println("Opción 2 = Resta");
+		System.out.println("Opción 3 = Multiplicación");
+		System.out.println("Opción 4 = División");
+		System.out.println("Opción 5 = Raiz");
+		System.out.println("Opción 6 = Porcentaje de");
+		opc = teclado.nextInt();
+		while (!(opc==1||opc==2||opc==3||opc==4||opc==5||opc==6)) {
+			System.out.println("Por favor introduzca una opcion valida");
+			opc = teclado.nextInt();
+		}
+		
+		while (opc==1||opc==2||opc==3||opc==4||opc==6) {
 		System.out.println("introduzca el segundo numero");
 		verificador = teclado.next();
 		i=0;
@@ -47,17 +61,11 @@ public class Calculadora {
 				i++;
 			}
 		}
-		num2=Integer.parseInt(verificador);
-		System.out.println("OPCIONES:");
-		System.out.println("Opción 1 = Suma");
-		System.out.println("Opción 2 = Resta");
-		System.out.println("Opción 3 = Multiplicación");
-		System.out.println("Opción 4 = División");
-		opc = teclado.nextInt();
-		while (!(opc==1||opc==2||opc==3||opc==4)) {
-			System.out.println("Por favor introduzca una opcion valida");
-			opc = teclado.nextInt();
+		break;
 		}
+		num2=Integer.parseInt(verificador);
+		
+		
 		if (opc == 1) {
 			result= num1 + num2;
 		System.out.println(result);	
@@ -73,6 +81,14 @@ public class Calculadora {
 		if (opc == 4) {
 			result=num1/num2;
 			System.out.println(result);	
+		
+		}
+		if (opc == 5) {
+			System.out.println("La raíz cuadrada de " + num1 + " es " + Math.sqrt(num1));
+		}
+		if (opc == 6) {
+			result=(num1/num2)*100;
+			System.out.println(num1 + " es el "+ result+ "% de "+ num2);
 		}
 	}
 
