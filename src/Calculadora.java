@@ -17,7 +17,7 @@ public class Calculadora {
 		// TODO Auto-generated method stub
 		Scanner teclado=new Scanner(System.in);
 		int opc=1; //Opcion que das a elegir al usuario, para que eliga si quiere sumar, restar,...
-		int num1 =0,num2 = 0; //Los numeros con los valores que se realizaran los calculos
+		float num1 =0,num2 = 0; //Los numeros con los valores que se realizaran los calculos
 		float result=0; //Resultado de las operaciones
 		String numeros="1234567890"; //Esta variable se utiliza para verificar si se ha introducido un numero correcto
 		String verificador=""; //Variable parecida al comodin, que toma el valor del numero introducido y lo conprueba si esta correcto o no
